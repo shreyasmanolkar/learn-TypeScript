@@ -31,7 +31,7 @@
 
 class User3 {
     
-    private _courseCount = 1;
+    protected _courseCount = 1;
 
     readonly city: string = "pune";
 
@@ -58,6 +58,16 @@ class User3 {
             throw new Error("Course count should be more than 1"); 
         }
         this._courseCount = courseNumber;
+    }
+
+}
+
+
+class subUser extends User3 {
+    isFamily: boolean = true;
+
+    changeCourseCount(){
+        this._courseCount = 4;
     }
 
 }

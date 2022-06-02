@@ -43,3 +43,12 @@ class User3 {
         this._courseCount = courseNumber;
     }
 }
+class subUser extends User3 {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
+    }
+}
