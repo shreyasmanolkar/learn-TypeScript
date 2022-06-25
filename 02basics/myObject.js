@@ -20,3 +20,10 @@ function createUserTwo(user) {
 }
 ;
 createUserTwo({ name: "shreyas", email: "shreyasmanolkar123@gmail.com", isActive: true });
+var myUser = {
+    _id: "1245",
+    name: "s",
+    email: 's@s.com',
+    isActive: false
+};
+myUser.email = "s@s.com";

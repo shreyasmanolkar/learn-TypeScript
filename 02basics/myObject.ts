@@ -33,4 +33,35 @@ function createUserTwo(user: User): User {
 
 createUserTwo({name: "shreyas", email: "shreyasmanolkar123@gmail.com", isActive: true});
 
+type User2 = {
+    readonly _id: string; 
+    name: string;
+    email: string;
+    isActive: boolean;
+    credCardDetail?: number
+}
+
+let myUser: User2 = {
+    _id: "1245",
+    name: "s", 
+    email: 's@s.com',
+    isActive: false
+}
+
+type cardNumber = {
+    cardnumber: string
+}
+
+type cardDate = {
+    cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number
+};
+
+myUser.email = "s@s.com"
+// myUser._id = "asa"
+
+
 export {};
