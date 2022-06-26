@@ -18,4 +18,19 @@ function createCourse():{ name: string, price: number}{
     return {name: "reactjs", price: 399};
 }
 
+
+// type alias
+
+type User = {
+    name: string;
+    email: string;
+    isActive: boolean;
+};
+
+function createUserTwo(user: User): User {
+    return {name: "", email: "", isActive: true}
+};
+
+createUserTwo({name: "shreyas", email: "shreyasmanolkar123@gmail.com", isActive: true});
+
 export {};
