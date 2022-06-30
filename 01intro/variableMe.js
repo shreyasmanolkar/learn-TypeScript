@@ -10,3 +10,9 @@ var userId = 334466;
 userId.toFixed();
 //  boolean
 var isLoggedIn = true;
+// any
+var hero;
+function getHero() {
+    return "indra";
+}
+hero = getHero();
