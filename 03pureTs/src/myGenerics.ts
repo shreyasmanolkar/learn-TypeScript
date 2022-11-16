@@ -27,3 +27,17 @@ interface Bottle{
 function identityFive<Bottle>(val: Bottle): Bottle{
     return val;
 };
+
+function getSearchProducts<T>(products: T[]): T{
+    // do some database opearations
+
+    const myIndex = 3;
+
+    return products[3];
+}
+
+const getMoreSearchProducts = <T>(products: T[]): T => {
+    // do some database operations
+    const myIndex = 4
+    return  products[myIndex];
+};

@@ -23,3 +23,13 @@ function identityFive(val) {
     return val;
 }
 ;
+function getSearchProducts(products) {
+    // do some database opearations
+    const myIndex = 3;
+    return products[3];
+}
+const getMoreSearchProducts = (products) => {
+    // do some database operations
+    const myIndex = 4;
+    return products[myIndex];
+};
